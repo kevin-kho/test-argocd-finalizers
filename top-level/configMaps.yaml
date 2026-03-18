@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: configmaps-top-level
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/kevin-kho/test-argocd-finalizers
+    targetRevision: HEAD
+    path: configMaps
+  destination:
+    name: in-cluster
+    namespace: argocd
+  syncPolicy:
+    automated:
+      enabled: true
