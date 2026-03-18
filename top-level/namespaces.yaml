@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/kevin-kho/test-argocd-finalizers
     targetRevision: HEAD
-    path: app-of-apps
+    path: namespaces
   destination:
     name: in-cluster
     namespace: argocd
