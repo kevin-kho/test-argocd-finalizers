@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: workflow-app-of-apps
+  name: workflow-namespace
   namespace: argocd
 spec:
   project: default
